@@ -1,0 +1,41 @@
+.button-container1 {
+  border-radius: 5px;
+  background-color: #e3e8ed;
+  color: #111827;
+  padding: 23px 20px;
+  cursor: pointer;
+  width: 900px;
+}
+
+.button-hover {
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #111827;
+  padding: 23px 20px;
+  cursor: pointer;
+  width: 900px;
+}
+
+.button-container {
+  border-radius: 5px;
+  color: #111827;
+  padding: 23px 20px;
+  cursor: pointer;
+  width: 900px;
+}
+.button-container:hover {
+  background-color: #e3e8ed;
+  &.button-hover {
+    background-color: #ffffff;
+  }
+}
+
+.button-container span,
+.experience-date {
+  opacity: 0.7;
+  font-weight: lighter;
+}
+
+.google-style {
+  color: #134fd2;
+}
