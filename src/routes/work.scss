@@ -1,3 +1,9 @@
 .latest-work span {
   color: #2563eb;
 }
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 68px 48px;
+}

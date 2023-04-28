@@ -1,14 +1,14 @@
 import React from "react";
 import { Box, Stack, Typography } from "@mui/material";
-import GlibImage from "../assets/images/glib.png";
+import FintechImage from "../assets/images/fintech.png";
 import GithubIcon from "../assets/icons/github-icon.png";
 import GotoIcon from "../assets/icons/go-to.png";
 
 import "./portfolio.scss";
 
-const GlibPortfolio = () => {
+const FintechLanding = () => {
   return (
-    <Box className="glibportfolio">
+    <Box className="other-portfolio">
       <Stack direction="column" gap="23px">
         <Stack direction="row" gap="197px" alignItems="center">
           <Typography
@@ -16,15 +16,12 @@ const GlibPortfolio = () => {
             fontSize="36px"
             fontWeight="bold"
           >
-            Glib Portfolio
-          </Typography>
-          <Typography color="#2563eb" fontFamily="source code pro">
-            2023
+            Fintech Landing
           </Typography>
         </Stack>
         <Stack>
           <img
-            src={GlibImage}
+            src={FintechImage}
             alt="Glib Portfolio"
             width="532px"
             height="372"
@@ -78,4 +75,4 @@ const GlibPortfolio = () => {
   );
 };
 
-export default GlibPortfolio;
+export default FintechLanding;

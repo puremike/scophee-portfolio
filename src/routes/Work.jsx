@@ -1,5 +1,9 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Stack } from "@mui/material";
 import "./work.scss";
+import GlibPortfolio from "../components/GlibPortfolio";
+import NFTMarketplace from "../components/NFTMarketplace";
+import FintechLanding from "../components/FintechLanding";
+import DigitalAgency from "../components/DigitalAgency";
 
 const Work = () => {
   return (
@@ -12,6 +16,12 @@ const Work = () => {
       >
         My latest <span>work</span>
       </Typography>
+      <div className="portfolio-grid">
+        <GlibPortfolio className="one" />
+        <NFTMarketplace className="two" />
+        <FintechLanding className="three" />
+        <DigitalAgency className="four" />
+      </div>
     </Box>
   );
 };
