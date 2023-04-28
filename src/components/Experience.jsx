@@ -18,7 +18,7 @@ const Experience = () => {
   const { job, place, date, role1, role2, role3 } = workHover;
 
   return (
-    <Box sx={{ mt: "196px", ml: "410px", mb: "123px" }}>
+    <Box sx={{ mt: "196px", ml: "410px", mb: "100px" }}>
       <Typography fontFamily="Source Code Pro" fontSize="48px" mb="42px">
         My experience
       </Typography>

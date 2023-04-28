@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { Box, Stack, Typography, Button } from "@mui/material";
 import GithubIcon from "../assets/icons/github-icon.png";
 import LightDarkIcon from "../assets/icons/light-dark-icon.png";
@@ -29,16 +30,16 @@ const NavBar = () => {
             Home
           </Typography>
         </Link>
-        <Link to="#about">
+        <a href="#about">
           <Typography fontSize="20px" color="#111827">
             About
           </Typography>
-        </Link>
-        <Link to="#work">
+        </a>
+        <a href="#work">
           <Typography fontSize="20px" color="#111827">
             Work
           </Typography>
-        </Link>
+        </a>
         <Link to="https://github.com/puremike">
           <img
             src={GithubIcon}
@@ -46,14 +47,12 @@ const NavBar = () => {
             style={{ width: "25px", height: "25px" }}
           />
         </Link>
-
         <img
           src={LightDarkIcon}
           alt="light-dark-icon"
           style={{ width: "25px", height: "25px", cursor: "pointer" }}
         />
-
-        <Link to="#contact">
+        <a href="#contact">
           <Button>
             <Typography
               className="contact-btn"
@@ -63,7 +62,7 @@ const NavBar = () => {
               Contact Me →
             </Typography>
           </Button>
-        </Link>
+        </a>
       </Stack>
     </Stack>
   );
