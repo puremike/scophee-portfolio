@@ -7,50 +7,17 @@ import LightDarkIcon from "../assets/icons/light-dark-icon.png";
 
 import "./navbar.scss";
 
-//        xs: 400,
-//       sm: 600,
-//       md: 900,
-//       lg: 1200,
-//       xl: 1440,
-//      xxl: 1800
-
 const NavBar = () => {
   return (
-    <Box
-    // maxWidth={{
-    //   md: "760px",
-    //   lg: "1200px",
-    //   xl: "1440px",
-    //   xxl: "1800px",
-    // }}
-    >
+    <Box>
       <Stack
         direction="row"
         alignItems="center"
-        gap={{
-          md: "190px",
-          lg: "400px",
-          xl: "600px",
-          xxl: "1000px",
-        }}
+        gap="1100px"
         mt="17.5px"
         mb="17.5px"
-        ml={{
-          xs: "20px",
-          sm: "20px",
-          md: "100px",
-          lg: "100px",
-          xl: "300px",
-          xxl: "450px",
-        }}
-        mr={{
-          xs: "20px",
-          sm: "20px",
-          md: "100px",
-          lg: "100px",
-          xl: "200px",
-          xxl: "300px",
-        }}
+        ml="350px"
+        mr="200px"
       >
         <Link to="/">
           <Typography fontSize="25px" color="#111827" fontWeight="bold">

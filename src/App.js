@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { createTheme, ThemeProvider } from "@mui/material";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Work from "./routes/Work";
@@ -9,22 +8,9 @@ import Footer from "./components/Footer";
 
 import "./App.css";
 
-const theme = createTheme({
-  breakpoints: {
-    values: {
-      xs: 400,
-      sm: 600,
-      md: 760,
-      lg: 1200,
-      xl: 1440,
-      xxl: 1800,
-    },
-  },
-});
-
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <div>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}>
@@ -34,7 +20,7 @@ const App = () => {
         </Route>
       </Routes>
       <Footer />
-    </ThemeProvider>
+    </div>
   );
 };
 
