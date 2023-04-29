@@ -10,6 +10,7 @@ import {
   OculusExperience,
 } from "../context/HoverContext";
 import "./experience.scss";
+import "animate.css";
 
 const Experience = () => {
   const { hover, setHover } = useContext(HoverContext);
@@ -58,7 +59,7 @@ const Experience = () => {
             onClick={() => {
               setWorkHover(HashnodeExperience);
             }}
-            className="button-container"
+            className="button-container animate"
             direction="row"
             gap="18px"
           >
@@ -82,7 +83,7 @@ const Experience = () => {
             onClick={() => {
               setWorkHover(OculusExperience);
             }}
-            className="button-container"
+            className="button-container animate"
             direction="row"
             gap="18px"
           >
@@ -102,7 +103,7 @@ const Experience = () => {
             </Typography>
           </Stack>
         </Stack>
-        <Stack direction="column" gap="24px" width="600px">
+        <Stack direction="column" gap="24px" width="600px" className="animate">
           <Typography fontWeight="bold">
             {job} <span className="google-style">{place}</span>
             <br />

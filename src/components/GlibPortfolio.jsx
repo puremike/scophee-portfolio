@@ -3,8 +3,10 @@ import { Box, Stack, Typography } from "@mui/material";
 import GlibImage from "../assets/images/glib.png";
 import GithubIcon from "../assets/icons/github-icon.png";
 import GotoIcon from "../assets/icons/go-to.png";
+import { motion } from "framer-motion";
 
 import "./portfolio.scss";
+import "animate.css";
 
 const GlibPortfolio = () => {
   return (

@@ -7,6 +7,10 @@
   width: 900px;
 }
 
+.button-container1 {
+  animation: pulse;
+  animation-duration: 1s;
+}
 .button-hover {
   border-radius: 5px;
   background-color: #ffffff;
@@ -38,4 +42,9 @@
 
 .google-style {
   color: #134fd2;
+}
+
+.animate:hover {
+  animation: pulse;
+  animation-duration: 1s;
 }
