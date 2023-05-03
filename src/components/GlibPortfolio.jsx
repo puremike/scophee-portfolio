@@ -10,11 +10,11 @@ import "animate.css";
 const GlibPortfolio = () => {
   return (
     <Box className="glibportfolio">
-      <Stack direction="column" gap="23px">
+      <Stack direction="column" gap="16px">
         <Stack direction="row" gap="197px" alignItems="center">
           <Typography
             fontFamily="source code pro"
-            fontSize="34px"
+            fontSize="28px"
             fontWeight="bold"
           >
             Glib Portfolio
@@ -28,10 +28,10 @@ const GlibPortfolio = () => {
             src={GlibImage}
             alt="Glib Portfolio"
             width="500px"
-            height="372px"
+            height="390px"
           />
         </Stack>
-        <Stack direction="row" gap="149px">
+        <Stack direction="row" gap="120px">
           <Stack direction="row" gap="20px">
             <Typography
               fontWeight="bold"
@@ -68,7 +68,7 @@ const GlibPortfolio = () => {
           </Stack>
         </Stack>
         <Stack>
-          <Typography fontSize="16px" fontFamily="source sans pro">
+          <Typography fontSize="14px" fontFamily="source sans pro">
             Digital agency is a landing page built with the latest version of
             ReactJS using <br />
             best practices.

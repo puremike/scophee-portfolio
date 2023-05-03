@@ -9,11 +9,11 @@ import "./portfolio.scss";
 const FintechLanding = () => {
   return (
     <Box className="other-portfolio">
-      <Stack direction="column" gap="23px">
+      <Stack direction="column" gap="16px">
         <Stack direction="row" gap="197px" alignItems="center">
           <Typography
             fontFamily="source code pro"
-            fontSize="36px"
+            fontSize="28px"
             fontWeight="bold"
           >
             Fintech Landing
@@ -24,10 +24,10 @@ const FintechLanding = () => {
             src={FintechImage}
             alt="Fintech Portfolio"
             width="500px"
-            height="372"
+            height="390px"
           />
         </Stack>
-        <Stack direction="row" gap="149px">
+        <Stack direction="row" gap="120px">
           <Stack direction="row" gap="20px">
             <Typography
               fontWeight="bold"
@@ -64,7 +64,7 @@ const FintechLanding = () => {
           </Stack>
         </Stack>
         <Stack>
-          <Typography fontSize="16px" fontFamily="source sans pro">
+          <Typography fontSize="14px" fontFamily="source sans pro">
             Digital agency is a landing page built with the latest version of
             ReactJS using <br />
             best practices.

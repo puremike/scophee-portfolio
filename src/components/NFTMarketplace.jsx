@@ -13,7 +13,7 @@ const NFTMarketplace = () => {
         <Stack direction="row" gap="197px" alignItems="center">
           <Typography
             fontFamily="source code pro"
-            fontSize="36px"
+            fontSize="28px"
             fontWeight="bold"
           >
             NFT Marketplace
@@ -22,7 +22,7 @@ const NFTMarketplace = () => {
         <Stack>
           <img src={NFTImage} alt="NFT Portfolio" width="500px" height="372" />
         </Stack>
-        <Stack direction="row" gap="149px">
+        <Stack direction="row" gap="120px">
           <Stack direction="row" gap="20px">
             <Typography
               fontWeight="bold"
@@ -59,7 +59,7 @@ const NFTMarketplace = () => {
           </Stack>
         </Stack>
         <Stack>
-          <Typography fontSize="16px" fontFamily="source sans pro">
+          <Typography fontSize="14px" fontFamily="source sans pro">
             Digital agency is a landing page built with the latest version of
             ReactJS using <br />
             best practices.
