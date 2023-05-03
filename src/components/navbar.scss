@@ -1,3 +1,22 @@
+.menu-btn,
+.logo-btn {
+  cursor: pointer;
+}
+
+.navbar-a {
+  color: #111827;
+  font-size: 1.2rem;
+  color: "black";
+  font-family: "Source sans pro", sans-serif;
+}
+
+.navbar-a:hover {
+  background-color: #316ee9;
+  color: white;
+  border-radius: 2px;
+  padding: 2px;
+}
+
 .contact-btn {
   background-color: #3474f3;
   color: white;

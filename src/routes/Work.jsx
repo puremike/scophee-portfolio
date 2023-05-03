@@ -1,4 +1,4 @@
-import { Box, Typography, Stack } from "@mui/material";
+import { Box, Typography, Grid } from "@mui/material";
 import "./work.scss";
 import GlibPortfolio from "../components/GlibPortfolio";
 import NFTMarketplace from "../components/NFTMarketplace";
@@ -7,7 +7,7 @@ import DigitalAgency from "../components/DigitalAgency";
 
 const Work = () => {
   return (
-    <Box sx={{ mt: "196px", ml: "410px", mb: "123px" }}>
+    <Box sx={{ m: "130px 0", p: { xs: "1rem 1rem", lg: "2rem 14rem" } }}>
       <Typography
         className="latest-work"
         fontFamily="Source Code Pro"
@@ -16,12 +16,19 @@ const Work = () => {
       >
         My latest <span>work</span>
       </Typography>
-      <div className="portfolio-grid">
+      <Grid
+        container
+        direction="row"
+        gap="50px"
+        justifyContent="center"
+        alignItems="center"
+      >
         <GlibPortfolio className="one" />
         <NFTMarketplace className="two" />
         <FintechLanding className="three" />
         <DigitalAgency className="four" />
-      </div>
+        <NFTMarketplace className="two" />
+      </Grid>
     </Box>
   );
 };

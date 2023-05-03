@@ -5,13 +5,16 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { HoverProvider } from "./context/HoverContext";
+import { DisplayProvider } from "./context/DisplayContexts";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <HoverProvider>
-        <App />
+        <DisplayProvider>
+          <App />
+        </DisplayProvider>
       </HoverProvider>
     </BrowserRouter>
   </React.StrictMode>

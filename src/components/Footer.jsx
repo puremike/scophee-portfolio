@@ -9,8 +9,10 @@ import GithubIcon from "../assets/icons/github-icon.png";
 
 const Footer = () => {
   return (
-    <Stack direction="row" gap="1410px" mx="auto" mt="33px" width="1600px">
-      <Typography color="#2563EB">Scophee</Typography>
+    <Stack direction="row" justifyContent="space-between" mt="33px">
+      <Typography color="#2563EB">
+        <Link to="/">Scophee</Link>
+      </Typography>
       <Stack direction="row" gap="18px">
         <Link to="https://www.linkedin.com/in/michaelegbinola/">
           <img src={LinkedInIcon} alt="linkedin-icon" />

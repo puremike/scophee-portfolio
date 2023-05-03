@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro:wght@700&family=Source+Sans+Pro&display=swap");
 
-body,
-html {
-  scroll-behavior: smooth;
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 code {

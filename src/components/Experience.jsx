@@ -19,11 +19,19 @@ const Experience = () => {
   const { job, place, date, role1, role2, role3 } = workHover;
 
   return (
-    <Box sx={{ mt: "196px", ml: "410px", mb: "100px" }}>
+    <Box
+      sx={{ m: "100px 0", p: { xs: "1rem 1rem", lg: "2rem 14rem" } }}
+      justifyItems="center"
+    >
       <Typography fontFamily="Source Code Pro" fontSize="48px" mb="42px">
         My experience
       </Typography>
-      <Stack direction="row" gap="70px" alignItems="center">
+      <Stack
+        direction={{ xs: "column", xl: "row" }}
+        gap="20px"
+        alignItems="center"
+        width="100%"
+      >
         <Stack direction="column" gap="20px">
           <Stack
             onMouseEnter={() => {
@@ -35,6 +43,7 @@ const Experience = () => {
             className={hover}
             direction="row"
             gap="20px"
+            width={{ xs: "50vw", lg: "50vw" }}
           >
             <img
               src={GoogleIcon}
@@ -43,7 +52,7 @@ const Experience = () => {
               alt="Google-icon"
             />
             <Typography
-              fontSize="12px"
+              fontSize="18px"
               textTransform="capitalize"
               textAlign="justify"
               fontWeight="bold"
@@ -70,7 +79,7 @@ const Experience = () => {
               alt="Hashnode-icon"
             />
             <Typography
-              fontSize="12px"
+              fontSize="18px"
               textTransform="capitalize"
               textAlign="justify"
               fontWeight="bold"
@@ -94,7 +103,7 @@ const Experience = () => {
               alt="Oculus-icon"
             />
             <Typography
-              fontSize="12px"
+              fontSize="18px"
               textTransform="capitalize"
               textAlign="justify"
               fontWeight="bold"
@@ -103,19 +112,19 @@ const Experience = () => {
             </Typography>
           </Stack>
         </Stack>
-        <Stack direction="column" gap="24px" width="600px" className="animate">
-          <Typography fontWeight="bold">
+        <Stack direction="column" gap="24px" className="animate">
+          <Typography fontWeight="bold" fontSize="18px">
             {job} <span className="google-style">{place}</span>
             <br />
             <span className="experience-date">{date}</span>
           </Typography>
-          <Typography fontSize="15px" fontFamily="open sans">
+          <Typography fontSize="18px" fontFamily="open sans">
             {role1}
           </Typography>
-          <Typography fontSize="15px" fontFamily="open sans">
+          <Typography fontSize="18px" fontFamily="open sans">
             {role2}
           </Typography>
-          <Typography fontSize="15px" fontFamily="open sans">
+          <Typography fontSize="18px" fontFamily="open sans">
             {role3}
           </Typography>
         </Stack>

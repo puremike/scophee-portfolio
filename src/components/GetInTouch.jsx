@@ -3,19 +3,17 @@ import { Box, Typography } from "@mui/material";
 
 const GetInTouch = () => {
   return (
-    <Box mx="auto" mb="92px">
+    <Box mb="92px" justifyItems="center" width="100%" textAlign="center">
       <Typography
         fontWeight="bold"
         fontFamily="source code pro"
         fontSize="60px"
-        width="1500px"
         backgroundColor="#E3E8ED"
-        padding="50px"
+        padding="30px"
         borderRadius="20px"
         textAlign="center"
-        mx="auto"
       >
-        Ready to start <br /> your next project? <br />{" "}
+        Ready to start <br /> your next project? <br />
         <span className="get-in-touch">Get in touch with me!</span>
       </Typography>
     </Box>

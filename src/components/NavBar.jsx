@@ -1,80 +1,93 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { Box, Stack, Typography, Button } from "@mui/material";
+import Logo from "../assets/icons/logo.svg";
 import GithubIcon from "../assets/icons/github-icon.png";
 import LightDarkIcon from "../assets/icons/light-dark-icon.png";
+import MenuIcon from "../assets/icons/menu.png";
+
+import { DisplayContexts } from "../context/DisplayContexts";
 
 import "./navbar.scss";
+import AsideMenu from "./AsideMenu";
 
 const NavBar = () => {
+  const { aside, setAside } = useContext(DisplayContexts);
   return (
     <Box>
       <Stack
         direction="row"
         alignItems="center"
-        gap="1100px"
-        mt="17.5px"
-        mb="17.5px"
-        ml="350px"
-        mr="200px"
+        justifyContent="space-between"
+        p={{ xs: "1rem 1rem", lg: "2rem 14rem" }}
       >
-        <Link to="/">
-          <Typography fontSize="25px" color="#111827" fontWeight="bold">
-            Scophee
-          </Typography>
-        </Link>
-
-        <Stack
-          direction="row"
-          gap={{
-            xs: "20px",
-            sm: "25px",
-            md: "27px",
-            lg: "30px",
-          }}
-          alignItems="center"
-        >
-          <Link to="/">
-            <Typography fontSize="20px" color="#111827">
-              Home
-            </Typography>
-          </Link>
-          <a href="#about">
-            <Typography fontSize="20px" color="#111827">
-              About
-            </Typography>
-          </a>
-          <a href="#work">
-            <Typography fontSize="20px" color="#111827">
-              Work
-            </Typography>
-          </a>
-          <Link to="https://github.com/puremike">
+        <Stack direction="row" alignItems="center" gap="1rem">
+          <Stack display={{ md: "none" }}>
             <img
-              src={GithubIcon}
-              alt="github-icon"
-              style={{ width: "25px", height: "25px" }}
+              onClick={() => {
+                if (aside === "none") {
+                  setAside("block");
+                } else if (aside === "block") {
+                  setAside("none");
+                }
+              }}
+              src={MenuIcon}
+              alt="menu-icon"
+              className="menu-btn"
             />
+          </Stack>
+
+          <img src={Logo} alt="logo" className="logo-btn" />
+          <Link to="/">
+            <Typography fontSize="25px" color="#111827" fontWeight="bold">
+              Scophee
+            </Typography>
           </Link>
-          <img
-            src={LightDarkIcon}
-            alt="light-dark-icon"
-            style={{ width: "25px", height: "25px", cursor: "pointer" }}
-          />
-          <a href="#contact">
-            <Button>
-              <Typography
-                className="contact-btn"
-                fontSize="15px"
-                textTransform="capitalize"
-              >
-                Contact
-              </Typography>
-            </Button>
-          </a>
+        </Stack>
+
+        <Stack direction="row" alignItems="center" gap="25px">
+          <Stack
+            direction="row"
+            gap="25px"
+            alignItems="center"
+            display={{ xs: "none", md: "flex" }}
+          >
+            <Link to="/" className="navbar-a">
+              Home
+            </Link>
+            <a href="#about" className="navbar-a">
+              About
+            </a>
+            <a href="#work" className="navbar-a">
+              Work
+            </a>
+            <Link to="https://github.com/puremike">
+              <img
+                src={GithubIcon}
+                alt="github-icon"
+                style={{ width: "25px", height: "25px" }}
+              />
+            </Link>
+            <img
+              src={LightDarkIcon}
+              alt="light-dark-icon"
+              style={{ width: "25px", height: "25px", cursor: "pointer" }}
+            />
+          </Stack>
+
+          <Link to="#contact">
+            <Typography
+              className="contact-btn"
+              fontSize="15px"
+              textTransform="capitalize"
+            >
+              Contact
+            </Typography>
+          </Link>
         </Stack>
       </Stack>
+      <AsideMenu display={aside} />
     </Box>
   );
 };

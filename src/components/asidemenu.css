@@ -1,0 +1,14 @@
+.aside-menu {
+  background-color: #316ee9;
+  padding: 30px;
+}
+
+.aside-a-menu {
+  font-family: "Source sans pro", sans-serif;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.aside-a-menu a:hover {
+  font-size: 1.4rem;
+}

@@ -9,7 +9,7 @@ const About = () => {
       <Stack>
         <Typography
           color="#111827"
-          fontSize="60px"
+          fontSize={{ xs: "40px", sm: "60px" }}
           fontWeight="bold"
           lineHeight="70px"
           fontFamily="source code pro"
@@ -18,17 +18,17 @@ const About = () => {
           Hello, I'm <br /> Michael Egbinola
         </Typography>
         <Typography
-          fontSize="30px"
+          fontSize={{ xs: "25px", sm: "30px" }}
           fontWeight="bold"
           fontFamily="open sans"
           color="#898989"
           letterSpacing="3px"
           sx={{
-            textAlign: "justify",
             mt: "24px",
             mb: "24px",
             mx: "auto",
           }}
+          textAlign={{ xs: "left", sm: "center" }}
         >
           I am a UI Engineer at Google, where I design and develop user-
           <br />

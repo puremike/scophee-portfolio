@@ -3,7 +3,6 @@ import { Box, Stack, Typography } from "@mui/material";
 import GlibImage from "../assets/images/glib.png";
 import GithubIcon from "../assets/icons/github-icon.png";
 import GotoIcon from "../assets/icons/go-to.png";
-import { motion } from "framer-motion";
 
 import "./portfolio.scss";
 import "animate.css";
@@ -15,7 +14,7 @@ const GlibPortfolio = () => {
         <Stack direction="row" gap="197px" alignItems="center">
           <Typography
             fontFamily="source code pro"
-            fontSize="36px"
+            fontSize="34px"
             fontWeight="bold"
           >
             Glib Portfolio
@@ -29,7 +28,7 @@ const GlibPortfolio = () => {
             src={GlibImage}
             alt="Glib Portfolio"
             width="532px"
-            height="372"
+            height="372px"
           />
         </Stack>
         <Stack direction="row" gap="149px">

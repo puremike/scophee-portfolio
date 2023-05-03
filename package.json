@@ -12,6 +12,7 @@
     "animate.css": "^4.1.1",
     "framer-motion": "^10.12.4",
     "g": "^2.0.1",
+    "node-modules": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",

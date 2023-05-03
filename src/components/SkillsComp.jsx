@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Stack, Typography, Grid } from "@mui/material";
 import HtmlIcon from "../assets/icons/html.png";
 import CSSIcon from "../assets/icons/css.png";
 import JavaScriptIcon from "../assets/icons/javascript.png";
@@ -13,7 +13,13 @@ import "./skillscomp.scss";
 
 const SkillsComp = () => {
   return (
-    <Stack direction="row" gap="24px" width="1090px" mx="auto" mb="92px">
+    <Grid
+      container
+      direction="row"
+      justifyContent="center"
+      alignItems="center"
+      gap="25px"
+    >
       <Stack
         className="skills-container"
         direction="row"
@@ -134,7 +140,7 @@ const SkillsComp = () => {
           Express
         </Typography>
       </Stack>
-    </Stack>
+    </Grid>
   );
 };
 
