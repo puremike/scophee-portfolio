@@ -9,8 +9,13 @@ import GithubIcon from "../assets/icons/github-icon.png";
 
 const Footer = () => {
   return (
-    <Stack direction="row" justifyContent="space-between" mt="33px">
-      <Typography color="#2563EB">
+    <Stack
+      direction="row"
+      justifyContent="space-between"
+      m="33px 0 20px 0"
+      p="0 20px"
+    >
+      <Typography color="#2563EB" fontFamily="Piedra">
         <Link to="/">Scophee</Link>
       </Typography>
       <Stack direction="row" gap="18px">

@@ -22,8 +22,8 @@ const FintechLanding = () => {
         <Stack>
           <img
             src={FintechImage}
-            alt="Glib Portfolio"
-            width="532px"
+            alt="Fintech Portfolio"
+            width="500px"
             height="372"
           />
         </Stack>

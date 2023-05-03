@@ -27,7 +27,7 @@ const GlibPortfolio = () => {
           <img
             src={GlibImage}
             alt="Glib Portfolio"
-            width="532px"
+            width="500px"
             height="372px"
           />
         </Stack>

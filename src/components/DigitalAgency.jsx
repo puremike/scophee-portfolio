@@ -22,8 +22,8 @@ const DigitalAgency = () => {
         <Stack>
           <img
             src={DigitalImage}
-            alt="Glib Portfolio"
-            width="532px"
+            alt="Digital Portfolio"
+            width="500px"
             height="372"
           />
         </Stack>

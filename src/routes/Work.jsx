@@ -28,6 +28,7 @@ const Work = () => {
         <FintechLanding className="three" />
         <DigitalAgency className="four" />
         <NFTMarketplace className="two" />
+        <DigitalAgency className="four" />
       </Grid>
     </Box>
   );

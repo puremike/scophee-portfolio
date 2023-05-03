@@ -20,7 +20,7 @@ const NFTMarketplace = () => {
           </Typography>
         </Stack>
         <Stack>
-          <img src={NFTImage} alt="Glib Portfolio" width="532px" height="372" />
+          <img src={NFTImage} alt="NFT Portfolio" width="500px" height="372" />
         </Stack>
         <Stack direction="row" gap="149px">
           <Stack direction="row" gap="20px">
