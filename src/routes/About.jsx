@@ -5,7 +5,7 @@ import Experience from "../components/Experience";
 
 const About = () => {
   return (
-    <Box>
+    <Box id="about">
       <Stack>
         <Typography
           color="#111827"

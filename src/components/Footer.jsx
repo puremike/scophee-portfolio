@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack, Typography } from "@mui/material";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 import LinkedInIcon from "../assets/icons/linkedin.png";
 import TwitterIcon from "../assets/icons/twitter.png";
@@ -16,7 +16,9 @@ const Footer = () => {
       p="0 20px"
     >
       <Typography color="#2563EB" fontFamily="Piedra">
-        <Link to="/">Scophee</Link>
+        <Link to="#navbar" smooth>
+          Scophee
+        </Link>
       </Typography>
       <Stack direction="row" gap="18px">
         <Link to="https://www.linkedin.com/in/michaelegbinola/">

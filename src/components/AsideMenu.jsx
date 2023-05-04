@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Box, Stack, Typography } from "@mui/material";
+import { HashLink as Link } from "react-router-hash-link";
+import { Box, Stack } from "@mui/material";
 import GithubIcon from "../assets/icons/github-icon.png";
 import LightDarkIcon from "../assets/icons/light-dark-icon.png";
 
@@ -14,12 +14,12 @@ const AsideMenu = ({ display }) => {
           <Link to="/" className="aside-a-menu">
             Home
           </Link>
-          <a href="#about" className="aside-a-menu">
+          <Link to="#about" smooth className="aside-a-menu">
             About
-          </a>
-          <a href="#work" className="aside-a-menu">
+          </Link>
+          <Link to="#work" smooth className="aside-a-menu">
             Work
-          </a>
+          </Link>
         </Stack>
 
         <Stack direction="row" mt="20px" gap="25px">

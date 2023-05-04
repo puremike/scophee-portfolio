@@ -7,7 +7,10 @@ import DigitalAgency from "../components/DigitalAgency";
 
 const Work = () => {
   return (
-    <Box sx={{ m: "130px 0", p: { xs: "1rem 1rem", lg: "2rem 14rem" } }}>
+    <Box
+      id="work"
+      sx={{ m: "130px 0", p: { xs: "1rem 1rem", lg: "2rem 14rem" } }}
+    >
       <Typography
         className="latest-work"
         fontFamily="Source Code Pro"

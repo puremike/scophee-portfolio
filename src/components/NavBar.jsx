@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
-import { Box, Stack, Typography, Button } from "@mui/material";
+import { HashLink as Link } from "react-router-hash-link";
+import { Box, Stack, Typography } from "@mui/material";
 import Logo from "../assets/icons/logo.svg";
 import GithubIcon from "../assets/icons/github-icon.png";
 import LightDarkIcon from "../assets/icons/light-dark-icon.png";
@@ -15,7 +14,7 @@ import AsideMenu from "./AsideMenu";
 const NavBar = () => {
   const { aside, setAside } = useContext(DisplayContexts);
   return (
-    <Box>
+    <Box id="navbar">
       <Stack
         direction="row"
         alignItems="center"
@@ -56,12 +55,12 @@ const NavBar = () => {
             <Link to="/" className="navbar-a">
               Home
             </Link>
-            <a href="#about" className="navbar-a">
+            <Link to="#about" smooth className="navbar-a">
               About
-            </a>
-            <a href="#work" className="navbar-a">
+            </Link>
+            <Link to="#work" smooth className="navbar-a">
               Work
-            </a>
+            </Link>
             <Link to="https://github.com/puremike">
               <img
                 src={GithubIcon}
@@ -76,7 +75,7 @@ const NavBar = () => {
             />
           </Stack>
 
-          <Link to="#contact">
+          <Link to="#contact" smooth>
             <Typography
               className="contact-btn"
               fontSize="15px"
