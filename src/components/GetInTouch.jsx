@@ -7,7 +7,7 @@ const GetInTouch = () => {
       <Typography
         fontWeight="bold"
         fontFamily="source code pro"
-        fontSize="60px"
+        fontSize={{ xs: "30px", md: "50px", lg: "60px" }}
         backgroundColor="#E3E8ED"
         padding="30px"
         borderRadius="20px"
