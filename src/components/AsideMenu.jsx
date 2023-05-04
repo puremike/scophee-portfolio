@@ -8,7 +8,7 @@ import "./asidemenu.css";
 
 const AsideMenu = ({ display }) => {
   return (
-    <Box className="aside-menu" display={display} width="35%">
+    <Box className="aside-menu" display={display}>
       <Stack direction="column" alignItems="center" display="block">
         <Stack gap="10px" className="aside-a-menu">
           <Link to="/" className="aside-a-menu">
