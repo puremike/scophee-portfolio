@@ -1,6 +1,9 @@
 .aside-menu {
-  background-color: #316ee9;
+  background-color: #094bcf;
+  opacity: 0.8;
   padding: 30px;
+  box-shadow: 4px 4px 8px rgba(49, 49, 208, 0.3);
+  border-radius: 3px;
 }
 
 .aside-a-menu {
