@@ -22,10 +22,7 @@ const NavBar = () => {
         p={{ xs: "1rem 1rem", lg: "2rem 14rem" }}
       >
         <Stack direction="row" alignItems="center" gap="1rem">
-          <Stack
-            display={{ md: "none" }}
-            position={{ xs: "fixed", md: "fixed", top: "60px" }}
-          >
+          <Stack display={{ md: "none" }}>
             <img
               onClick={() => {
                 if (aside === "none") {
