@@ -19,18 +19,14 @@ const Experience = () => {
   const { job, place, date, role1, role2, role3 } = workHover;
 
   return (
-    <Box
-      sx={{ m: "100px 0", p: { xs: "1rem 1rem", lg: "2rem 14rem" } }}
-      justifyItems="center"
-    >
+    <Box sx={{ m: "100px 0", p: { xs: "1rem 1rem", lg: "2rem 14rem" } }}>
       <Typography fontFamily="Source Code Pro" fontSize="48px" mb="42px">
         My experience
       </Typography>
       <Stack
         direction={{ xs: "column", xl: "row" }}
-        gap="20px"
-        alignItems="center"
-        width="100%"
+        justifyContent="space-between"
+        gap="30px"
       >
         <Stack direction="column" gap="20px">
           <Stack
@@ -43,7 +39,7 @@ const Experience = () => {
             className={hover}
             direction="row"
             gap="20px"
-            width={{ xs: "50vw", lg: "50vw" }}
+            // width={{ xs: "50vw", lg: "50vw" }}
           >
             <img
               src={GoogleIcon}
@@ -113,7 +109,7 @@ const Experience = () => {
           </Stack>
         </Stack>
         <Stack direction="column" gap="24px" className="animate">
-          <Typography fontWeight="bold" fontSize="18px">
+          <Typography fontWeight="bold" fontSize="18px" textAlign="justify">
             {job} <span className="google-style">{place}</span>
             <br />
             <span className="experience-date">{date}</span>

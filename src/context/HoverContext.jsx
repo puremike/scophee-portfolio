@@ -1,5 +1,7 @@
 import { createContext, useState } from "react";
 
+const breakLine = <br />;
+
 export const GoogleExperience = {
   job: "UI Engineer",
   place: "@Google",
@@ -9,7 +11,7 @@ export const GoogleExperience = {
   role2:
     "⇒ Continuous improvement of the user experience and maintenance of quality standards.",
   role3:
-    "⇒ Conducting testing and validation, user research, and collaborating with other teams to ensure quality and effective integration with the final product.",
+    "⇒ Conducting testing and validation, user research, and collaborating with other teams to ensure quality and effective.",
 };
 
 export const HashnodeExperience = {
