@@ -4,6 +4,9 @@ export const DisplayContexts = createContext("");
 
 export const DisplayProvider = ({ children }) => {
   const [aside, setAside] = useState("none");
+
+  const [icon, setIcon] = useState("");
+
   const value = { aside, setAside };
 
   return (

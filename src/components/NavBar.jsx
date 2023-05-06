@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { Box, Stack, Typography } from "@mui/material";
 import Logo from "../assets/icons/logo.svg";
 import GithubIcon from "../assets/icons/github-icon.png";
 import LightDarkIcon from "../assets/icons/light-dark-icon.png";
-import MenuIcon from "../assets/icons/menu.png";
+// import MenuIcon from "../assets/icons/menu.png";
 
 import { DisplayContexts } from "../context/DisplayContexts";
 
@@ -13,6 +13,16 @@ import AsideMenu from "./AsideMenu";
 
 const NavBar = () => {
   const { aside, setAside } = useContext(DisplayContexts);
+  const [icon, setIcon] = useState(
+    "https://img.icons8.com/?size=512&id=3096&format=png"
+  );
+
+  const iconHandler = () => {
+    icon === "https://img.icons8.com/?size=512&id=3096&format=png"
+      ? setIcon("https://img.icons8.com/?size=512&id=46&format=png")
+      : setIcon("https://img.icons8.com/?size=512&id=3096&format=png");
+  };
+
   return (
     <Box id="navbar">
       <Stack
@@ -26,9 +36,11 @@ const NavBar = () => {
             <img
               onClick={() => {
                 aside === "none" ? setAside("block") : setAside("none");
+                iconHandler();
               }}
-              src={MenuIcon}
+              src={icon}
               alt="menu-icon"
+              width="32px"
               className="menu-btn"
             />
           </Stack>
